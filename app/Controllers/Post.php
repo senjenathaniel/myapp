@@ -37,12 +37,24 @@ class Post extends BaseController
   }
 
   public function create_post()
-  {
     {
-      return view('templates/header', ['title' => 'Create new post'])
-      .view('templates/navbar')
-      .view('posts/create_post')
-      .view('templates/footer');  
+      {
+        return view('templates/header', ['title' => 'Create new post','editor_link' => 'https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js'])
+        .view('templates/navbar')
+        .view('posts/create_post')
+        .view('templates/footer');  
+      }
     }
-  }
+
+  // public function insert_post() 
+  // {
+  //   $model = new UserModel();
+  //   $data = $_POST;
+  //   $model->insert($data);
+    
+  //   return view('templates/header', ['title' => 'Post Created'])
+  //   .view('templates/navbar')
+  //   .view('posts/success')
+  //   .view('templates/footer');
+  // }
 }

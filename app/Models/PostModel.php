@@ -8,7 +8,7 @@ class PostModel extends Model
 {
   protected $table = 'posts';
   protected $primaryKey = 'id';
-  // protected $allowedFields = ['post_title','post_slug', 'post_body', 'post_author', 'post_img_url'];
+  protected $allowedFields = ['body','author', 'img_url', 'is_published'];
 
   public function getPosts($id = false)
   {
