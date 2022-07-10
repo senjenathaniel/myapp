@@ -1,0 +1,29 @@
+CRITICAL - 2022-07-10 02:08:21 --> There is no data to insert.
+in SYSTEMPATH/BaseModel.php on line 718.
+ 1 SYSTEMPATH/BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert()
+ 3 APPPATH/Controllers/User.php(52): CodeIgniter\Model->insert()
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\User->insert_record()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-10 02:10:20 --> Class "App\Controllers\PostModel" not found
+in APPPATH/Controllers/Post.php on line 51.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Post->insert_post()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-10 02:10:46 --> Array to string conversion
+in APPPATH/Controllers/Post.php on line 52.
+ 1 APPPATH/Controllers/Post.php(52): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Post->insert_post()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-10 02:12:40 --> Undefined variable $POST
+in APPPATH/Controllers/Post.php on line 53.
+ 1 APPPATH/Controllers/Post.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Post->insert_post()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

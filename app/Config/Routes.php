@@ -42,6 +42,7 @@ $routes->get('/users', 'User::index');
 $routes->get('/users/(:segment)', 'User::view_user/$1');
 $routes->get('/posts', 'Post::index');
 $routes->get('/posts/create', 'Post::create_post');
+$routes->post('/posts/insert', 'Post::insert_post');
 $routes->get('/posts/(:segment)', 'Post::view_post/$1');
 
 /*
